@@ -46,7 +46,7 @@ Unicorn Tears
 
 """) 
 
-# Set up food objects 
+# Set up food objects -> Moved to food.py
 # food = [ "Wings",
 # "Cookies",
 # "Spring Rolls",
@@ -70,7 +70,7 @@ food_list = []
 #makes sure that the food type is actually in the list of food
 real_food = []
 for i in food.values():
-    print(food.values())
+    # print(food.values())
     real_food += i
 # print(real_food)
 
@@ -93,6 +93,7 @@ def order_food():
     elif order == "end":
         exit()
     else:
+        order_food()
         print("***Please make a different menu selection***") 
 
 order_food() 
